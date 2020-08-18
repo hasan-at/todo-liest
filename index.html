@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo list</title>
-   <link href="https://img.icons8.com/nolan/96/checklist.png" rel="icon"/>
+    <link href="https://img.icons8.com/nolan/96/checklist.png" rel="icon"/>
     <link rel="stylesheet" href="Styal.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<video id="myVideo" controls autoplay loop>
-    <source src="black_and_violet_ink_horizontal%20(1).mp4" type="video/mp4">
-</video>
 
 <main id="todolist">
     <h1>
         Todo List
         <span>Get things done, one item at a time.</span>
     </h1>
-
+<!---->
     <template v-if="todo.length">
+        <div class="list-container">
         <transition-group name="todolist" tag="ul">
             <li v-for="item in todoByStatus" v-bind:class="item.done ? 'done' : ''" v-bind:key="item.id">
                 <span class="label">{{item.label}}</span>
@@ -33,11 +31,13 @@
                 </div>
             </li>
         </transition-group>
+        </div>
         <togglebutton
                 label="Move done items at the end?"
                 name="todosort"
                 v-on:clicked="clickontoogle" />
     </template>
+
     <p v-else class="emptylist">Your todo list is empty.</p>
 
     <form name="newform" v-on:submit.prevent="addItem">
@@ -51,4 +51,4 @@
 </section>
 <script src="main.js"></script>
 </body>
-</html>
+</html

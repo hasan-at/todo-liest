@@ -4,8 +4,8 @@
     padding:0;
     box-sizing:border-box;
 }
-html, body {
-    background:#f7f1f1;
+html {
+    background:url(pexels.jpg) center/cover no-repeat;
     font-size:1.1rem;
     font-family: 'Pangolin', cursive;;
     height:100%;
@@ -13,22 +13,16 @@ html, body {
 @keyframes strikeitem {
     to { width:calc(100% + 1rem); }
 }
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height:100vh;
-}
+
 #todolist {
-    position: fixed;
-    margin:12% auto auto 37%;
+    margin:4rem auto auto;
     padding:2rem 3rem 3rem;
     max-width:500px;
     background:black;
     color:#FFF;
     border-radius: 15px;
     box-shadow:-20px -20px 0px 0px rgba(100,100,100,.1);
+    opacity: 0.8;
 }
 #todolist h1 {
     /*text-align:center;*/
@@ -51,6 +45,7 @@ html, body {
     letter-spacing:.05em;
     font-style:italic;
     opacity:0.8;
+    height: 240px;
 
 }
 #todolist ul {
@@ -194,5 +189,30 @@ form button {
         max-width: 100%;
     }
 
+}
+
+.list-container {
+    height: 255px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
