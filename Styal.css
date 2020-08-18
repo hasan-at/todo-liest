@@ -17,7 +17,7 @@ html, body {
     margin:4rem auto;
     padding:2rem 3rem 3rem;
     max-width:500px;
-    background:#FF6666;
+    background:black;
     color:#FFF;
     box-shadow:-20px -20px 0px 0px rgba(100,100,100,.1);
 }
@@ -112,7 +112,7 @@ form input {
 form button {
     padding:0 1.3rem;
     border:none;
-    background:#FF6666;
+    background:lightslategrey;
     color:white;
     text-transform:uppercase;
     font-weight:bold;
@@ -122,7 +122,7 @@ form button {
     transition:background .2s ease-out;
 }
 form button:hover {
-    background:#FF5E5E;
+    background:grey;
 }
 form input,
 form button {
