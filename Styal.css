@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 * {
     margin:0;
     padding:0;
@@ -6,19 +7,27 @@
 html, body {
     background:#f7f1f1;
     font-size:1.1rem;
-    font-family:'Quicksand', sans-serif;
+    font-family: 'Pangolin', cursive;;
     height:100%;
 }
 @keyframes strikeitem {
     to { width:calc(100% + 1rem); }
 }
-
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height:100vh;
+}
 #todolist {
-    margin:4rem auto;
+    position: fixed;
+    margin:12% auto auto 37%;
     padding:2rem 3rem 3rem;
     max-width:500px;
     background:black;
     color:#FFF;
+    border-radius: 15px;
     box-shadow:-20px -20px 0px 0px rgba(100,100,100,.1);
 }
 #todolist h1 {
@@ -126,7 +135,7 @@ form button:hover {
 }
 form input,
 form button {
-    font-family:'Quicksand', sans-serif;
+    font-family: 'Pangolin', cursive;
     height:3rem;
 }
 
@@ -177,5 +186,13 @@ form button {
 .togglebutton-wrapper.togglebutton-checked .tooglebutton-box:before {
     left:calc(100% - 4px - 16px);
     opacity:1;
+}
+@media screen and (max-width: 600px) {
+    #todolist {
+        margin: 10rem auto;
+        padding: 10rem 20rem 20rem;
+        max-width: 100%;
+    }
+
 }
 
